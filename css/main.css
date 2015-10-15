@@ -1,0 +1,22 @@
+.myHeader {
+  width: 100%;
+  background: #fff;
+  height: 65px;
+}
+.myHeader .headerBox {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.myHeader .headerBox .logo {
+  width: 83px;
+  height: 43px;
+  float: left;
+  margin-top: 12px;
+}
+.myHeader .headerBox .logo img {
+  display: inline-block;
+}
+.myHeader .headerBox .myNav {
+  float: right;
+}
