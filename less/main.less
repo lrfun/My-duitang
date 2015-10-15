@@ -1,25 +1,185 @@
+
+@border:1px solid #D4D5D6;
+@border-a:1px solid #E0E0E0;
+@border-b:1px solid  #EBEBEB;
+@color:#666;
+@bg-color:#fff;
+@color-a:#444;
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
 .myHeader{
 	 width:100%;
 	 background:#fff;
 	 height:65px;
-
+	 border-bottom: @border;
+	 position: fixed;
 	 .headerBox{
 	 	width:1200px;
 	 	margin:0 auto;
-	 	height: 100%;	 	
-	 	.logo{
-	 	  width:83px;
-	 	  height:43px;	 	 
-	 	  float:left;
-	 	  margin-top: 12px;
-	 	  img{	 	  	
-	 	  	display:inline-block;
-	 	  }
-	 	}
-	 	.myNav{
-	 	  float:right;
+	 	height: 100%;
+	 	z-index: 100;
+	 	.navLeft{
+	 		.fl;
+	 		height: 100%;
+		 	.logo{
+		 	  width:83px;
+		 	  height:100%;	 	 
+		 	  .fl;	
+		 	  vertical-align: middle; 	 
+		 	  img{	 	  	
+		 	  	display:inline-block;
+		 	  	height: 43px;
+		 	  	margin-top: 10px;
+		 	  }
+		 	}
+		 	.myNav{
+		 	  .fl;
+		 	  height: 100%;
+		 		.nav{
+		 			.fl;
+			 	  	position: relative;
+			 	  	margin: 0px 0 0 20px;
+			 	  	display: inline-block;
+			 	  	&:hover i{
+		 	  			-webkit-transform: rotateZ(-180deg);
+		 	  			-moz-transform: rotateZ(-180deg);
+		 	  			-o-transform: rotateZ(-180deg);
+		 	  			transform: rotateZ(-180deg);
+				 	  		}
+			 	  	.navBox{
+			 	  		width: 70px;
+				 	  	height: 26px;
+				 	  	border:@border-a;
+				 	  	border-radius: 2px;
+				 	  	margin: 19px 0 0 0px;
+				 	  	text-align: center;			 	  	
+				 	  	font: 14px/26px  "Microsoft YaHei","Arial";
+				 	  	color: @color;
+				 	  	cursor: pointer;
+				 	  	i{
+				 	  		display: inline-block;
+				 	  		width: 10px;
+				 	  		height: 10px;
+				 	  		background: url(../images/icon.png) no-repeat;
+				 	  		margin: 0 0 0 5px;
+				 	  		-moz-transition:-moz-transform .2s ease-out;
+				 	  		-webkit-transition:-webkittransform .2s ease-out;
+				 	  		-o-transition:-o-transform .2s ease-out;
+				 	  		transition:transform .2s ease-out;
+				 	  		// &:hover{
+				 	  		// 	-webkit-transform: rotateZ(-180deg);
+				 	  		// 	-moz-transform: rotateZ(-180deg);
+				 	  		// 	-o-transform: rotateZ(-180deg);
+				 	  		// 	transform: rotateZ(-180deg);
+				 	  		// }
+				 	  	}
+			 	  	}
+			 	  	.subNav{
+			 	  		position: absolute;
+			 	  		border:@border-a;
+			 	  		padding: 35px 0;
+			 	  		top:60px;
+			 	  		background: @bg-color;
+			 	  		color: @color-a;	 	  		
+			 	  		font: 13px/28px  "Microsoft YaHei","Arial";	
+			 	  		width: 470px;	 	  		
+			 	  		.suvNav_a{
+			 	  			.fl;		 	  			
+			 	  			width: 120px;
+			 	  			li{
+			 	  				padding: 0 0 0 30px;
+			 	  				line-height: 13px;
+			 	  				margin-bottom: 20px;
+			 	  			} 	  			
 
+			 	  		}
+
+			 	  	}
+			 	  	.subNav_b{
+			 	  		.fl;
+			 	  		border-left:@border-a;		 	  		
+			 	  		ul{
+			 	  			border-bottom: 1px  dashed  #E0E0E0;
+			 	  			margin: 0 10px 15px 10px;
+			 	  			padding: 0 50px 0 0px ;
+
+			 	  			li{
+				 	  			float: left;
+				 	  			border-right: @border-a;
+				 	  			height: 13px;
+				 	  			line-height: 13px;
+				 	  			margin: 0 0 15px 0;
+				 	  			padding: 0 15px;
+			 	  			}
+			 	  		}
+
+			 	  	}
+		 	    }
+		 	    .search{
+		 	    	.fl;
+		 	    	border: 1px solid #c5c5c5;
+		 	    	width: 364px;
+		 	    	height: 30px;
+		 	    	position: relative;
+		 	    	display: inline-block;
+		 	    	margin: 16px 0 0 50px;
+		 	    	.searchBox{
+		 	    		width: 322px;
+		 	    		padding: 0 0 0 3px;
+		 	    		height: 30px;
+		 	    		border: none;
+		 	    		font: 12px/30px  "Microsoft YaHei","Arial";
+					    outline:medium;
+		 	    	}
+		 	    	.searchBtn{
+		 	    		position: absolute;
+		 	    		border: none;
+		 	    		width: 38px;height: 30px;
+		 	    		right: 0;
+		 	    		cursor: pointer;
+		 	    		background: url(../images/search_icon.png) center no-repeat;
+					    outline:medium;
+		 	    	}
+
+		 	    }
+		 	}
 	 	}
+	 	.navRight{
+	 		.fr;
+	 		.regBtn{
+	 			display: inline-block;
+	 			width: 52px;
+	 			height: 28px;
+	 			background: #f46;
+	 			text-align: center;
+	 			color: @bg-color;
+	 			font: 13px/28px  "Microsoft YaHei","Arial";
+	 			margin: 19px 22px 0 0;
+	 			border-radius: 3px;
+	 		}
+	 		.signBtn{
+	 			font: 13px/25px  "Microsoft YaHei","Arial";
+	 			display: inline-block;
+	 			height: 25px;
+	 			margin: 20px 0 0 0;
+	 			padding: 0 25px;
+	 			border-right: @border-b;
+	 			border-left: @border-b;
+	 			color: @color-a;
+	 		}
+	 		span{
+	 			margin: 20px 25px;
+	 			display: inline-block;
+	 			font: 13px/25px  "Microsoft YaHei","Arial";
+	 			color: @color-a;
+	 		}
+	 	}	 	
+	 	
 	 }
 }
 

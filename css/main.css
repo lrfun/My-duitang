@@ -1,22 +1,165 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
 .myHeader {
   width: 100%;
   background: #fff;
   height: 65px;
+  border-bottom: 1px solid #d4d5d6;
+  position: fixed;
 }
 .myHeader .headerBox {
   width: 1200px;
   margin: 0 auto;
   height: 100%;
+  z-index: 100;
 }
-.myHeader .headerBox .logo {
-  width: 83px;
-  height: 43px;
+.myHeader .headerBox .navLeft {
   float: left;
-  margin-top: 12px;
+  height: 100%;
 }
-.myHeader .headerBox .logo img {
+.myHeader .headerBox .navLeft .logo {
+  width: 83px;
+  height: 100%;
+  float: left;
+  vertical-align: middle;
+}
+.myHeader .headerBox .navLeft .logo img {
+  display: inline-block;
+  height: 43px;
+  margin-top: 10px;
+}
+.myHeader .headerBox .navLeft .myNav {
+  float: left;
+  height: 100%;
+}
+.myHeader .headerBox .navLeft .myNav .nav {
+  float: left;
+  position: relative;
+  margin: 0px 0 0 20px;
   display: inline-block;
 }
-.myHeader .headerBox .myNav {
+.myHeader .headerBox .navLeft .myNav .nav:hover i {
+  -webkit-transform: rotateZ(-180deg);
+  -moz-transform: rotateZ(-180deg);
+  -o-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
+}
+.myHeader .headerBox .navLeft .myNav .nav .navBox {
+  width: 70px;
+  height: 26px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  margin: 19px 0 0 0px;
+  text-align: center;
+  font: 14px/26px "Microsoft YaHei", "Arial";
+  color: #666666;
+  cursor: pointer;
+}
+.myHeader .headerBox .navLeft .myNav .nav .navBox i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/icon.png) no-repeat;
+  margin: 0 0 0 5px;
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -webkit-transition: -webkittransform 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+}
+.myHeader .headerBox .navLeft .myNav .nav .subNav {
+  position: absolute;
+  border: 1px solid #e0e0e0;
+  padding: 35px 0;
+  top: 60px;
+  background: #ffffff;
+  color: #444444;
+  font: 13px/28px "Microsoft YaHei", "Arial";
+  width: 470px;
+}
+.myHeader .headerBox .navLeft .myNav .nav .subNav .suvNav_a {
+  float: left;
+  width: 120px;
+}
+.myHeader .headerBox .navLeft .myNav .nav .subNav .suvNav_a li {
+  padding: 0 0 0 30px;
+  line-height: 13px;
+  margin-bottom: 20px;
+}
+.myHeader .headerBox .navLeft .myNav .nav .subNav_b {
+  float: left;
+  border-left: 1px solid #e0e0e0;
+}
+.myHeader .headerBox .navLeft .myNav .nav .subNav_b ul {
+  border-bottom: 1px  dashed  #E0E0E0;
+  margin: 0 10px 15px 10px;
+  padding: 0 50px 0 0px ;
+}
+.myHeader .headerBox .navLeft .myNav .nav .subNav_b ul li {
+  float: left;
+  border-right: 1px solid #e0e0e0;
+  height: 13px;
+  line-height: 13px;
+  margin: 0 0 15px 0;
+  padding: 0 15px;
+}
+.myHeader .headerBox .navLeft .myNav .search {
+  float: left;
+  border: 1px solid #c5c5c5;
+  width: 364px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  margin: 16px 0 0 50px;
+}
+.myHeader .headerBox .navLeft .myNav .search .searchBox {
+  width: 322px;
+  padding: 0 0 0 3px;
+  height: 30px;
+  border: none;
+  font: 12px/30px "Microsoft YaHei", "Arial";
+  outline: medium;
+}
+.myHeader .headerBox .navLeft .myNav .search .searchBtn {
+  position: absolute;
+  border: none;
+  width: 38px;
+  height: 30px;
+  right: 0;
+  cursor: pointer;
+  background: url(../images/search_icon.png) center no-repeat;
+  outline: medium;
+}
+.myHeader .headerBox .navRight {
   float: right;
+}
+.myHeader .headerBox .navRight .regBtn {
+  display: inline-block;
+  width: 52px;
+  height: 28px;
+  background: #f46;
+  text-align: center;
+  color: #ffffff;
+  font: 13px/28px "Microsoft YaHei", "Arial";
+  margin: 19px 22px 0 0;
+  border-radius: 3px;
+}
+.myHeader .headerBox .navRight .signBtn {
+  font: 13px/25px "Microsoft YaHei", "Arial";
+  display: inline-block;
+  height: 25px;
+  margin: 20px 0 0 0;
+  padding: 0 25px;
+  border-right: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
+  color: #444444;
+}
+.myHeader .headerBox .navRight span {
+  margin: 20px 25px;
+  display: inline-block;
+  font: 13px/25px "Microsoft YaHei", "Arial";
+  color: #444444;
 }
