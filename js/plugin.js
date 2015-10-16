@@ -6,29 +6,27 @@ $(document).ready(function() {
 		$(this).find('#subNav').show();		
 	}).mouseout(function(){
 		$(this).find('#subNav').hide();
-	})
+	});
 
 	$('#subNav').mouseover(function () {
 		$(this).show();		
 	}).mouseout(function(){
 		$(this).hide();		
-	})
+	});
 
 	//头部鼠标经过显示关联账号
 	$('#relLogin').mouseover(function(){
 		$(this).find('#relNum_more').show();
 	}).mouseout(function(){
 		$(this).find('#relNum_more').hide();
-	})
+	});
 
 	$('#relNum_more').mouseover(function () {
 		$(this).show();		
 	}).mouseout(function(){
 		$(this).hide();		
-	})
-
-
-})
+	});
+});
 
 // $(document).ready(function() {
 // 	show_Sub(nav,subNav);

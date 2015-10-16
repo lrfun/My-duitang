@@ -15,6 +15,7 @@
 
 // 头部
 .myHeader{
+	z-index: 1000;
 	 width:100%;
 	 background:#fff;
 	 height:65px;
@@ -294,6 +295,7 @@
 
 
 //body
+
 .container{
 	width: 1200px;
 	margin: 100px auto 40px;
@@ -305,20 +307,102 @@
 			height: 445px;
 			overflow: hidden;
 			.fl;
+			&:hover .up_down{
+				display: block;
+			} 
 			.bannerBar{
-				width: 500%;
+				width: 300%;
 				position: absolute;
 				.banner_img{
-					width: 100%;
-					height: 100%;
+					width:712px;
+					height: 445px;
+					.fl;
+					position: relative;					
+					span{
+						z-index: 1000;
+						position: absolute;
+						font:27px/64px  "Microsoft YaHei","Arial";
+		 			    color: @bg-color;
+		 			    bottom:22px;
+		 			    left: 60px;
+		 			    strong{
+		 			    	font:14px/64px  "Microsoft YaHei","Arial";
+		 			    	vertical-align: top;
+		 			    }
+					}
+				}
+			}
+			.banner_num{
+				position: absolute;
+				bottom: 20px;
+				left: 40px;
+				width: 632px;
+				height: 64px;
+				.banner_bg{
+					background: #000;
+					width: 632px;
+					height: 64px;
+					opacity: .45;
+ 					 filter: alpha(opacity=45);
+ 					 border-radius: 10px;
+				}
+				.banner_text{
+					position: absolute;
+					bottom: 27px;
+					left: 500px;
+
+					li{
+						width: 15px;
+						height: 15px;
+						background: url(../images/num.png) no-repeat;
+						background-size: 100%;
+						.fl;
+						margin-left: 5px;						
+					}
+					.cur{
+						background: url(../images/num_hover.png) no-repeat;
+
+						background-size: 100%;
+					}
+
+				}
+			}
+			.up_down{
+				display: none;
+				width: 100%;
+				position: absolute;
+				top:50%;
+				margin-top: -19px;
+				.ban_up{
+					margin-left: 20px;
+					width: 21px;
+					height: 38px;
+					.fl;
+				}
+				.ban_down{
+					margin-right:20px;
+					width: 21px;
+					height: 38px;
+					.fr;
 				}
 			}
 		}
 		.sideBar{
+			width: 468px;
 			.fr;
 			.side_up{
+				background: @bg-color;
 				height: 291px;
 				border: 1px solid #DEDFE0;
+				.side_up_con{
+					padding: 14px 32px;
+					h3{
+						font:16px/16px  "Microsoft YaHei","Arial";
+  						border-bottom: 1px solid #ebebeb;
+  						height: 36px;
+  						color: @color;
+					}
+				}
 			}
 			.side_down{
 				border: 1px solid #DEDFE0;

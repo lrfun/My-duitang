@@ -5,6 +5,7 @@
   float: right;
 }
 .myHeader {
+  z-index: 1000;
   width: 100%;
   background: #fff;
   height: 65px;
@@ -274,20 +275,99 @@
   overflow: hidden;
   float: left;
 }
+.container .bannerBox .banner:hover .up_down {
+  display: block;
+}
 .container .bannerBox .banner .bannerBar {
-  width: 500%;
+  width: 300%;
   position: absolute;
 }
 .container .bannerBox .banner .bannerBar .banner_img {
+  width: 712px;
+  height: 445px;
+  float: left;
+  position: relative;
+}
+.container .bannerBox .banner .bannerBar .banner_img span {
+  z-index: 1000;
+  position: absolute;
+  font: 27px/64px "Microsoft YaHei", "Arial";
+  color: #ffffff;
+  bottom: 22px;
+  left: 60px;
+}
+.container .bannerBox .banner .bannerBar .banner_img span strong {
+  font: 14px/64px "Microsoft YaHei", "Arial";
+  vertical-align: top;
+}
+.container .bannerBox .banner .banner_num {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  width: 632px;
+  height: 64px;
+}
+.container .bannerBox .banner .banner_num .banner_bg {
+  background: #000;
+  width: 632px;
+  height: 64px;
+  opacity: .45;
+  filter: alpha(opacity=45);
+  border-radius: 10px;
+}
+.container .bannerBox .banner .banner_num .banner_text {
+  position: absolute;
+  bottom: 27px;
+  left: 500px;
+}
+.container .bannerBox .banner .banner_num .banner_text li {
+  width: 15px;
+  height: 15px;
+  background: url(../images/num.png) no-repeat;
+  background-size: 100%;
+  float: left;
+  margin-left: 5px;
+}
+.container .bannerBox .banner .banner_num .banner_text .cur {
+  background: url(../images/num_hover.png) no-repeat;
+  background-size: 100%;
+}
+.container .bannerBox .banner .up_down {
+  display: none;
   width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -19px;
+}
+.container .bannerBox .banner .up_down .ban_up {
+  margin-left: 20px;
+  width: 21px;
+  height: 38px;
+  float: left;
+}
+.container .bannerBox .banner .up_down .ban_down {
+  margin-right: 20px;
+  width: 21px;
+  height: 38px;
+  float: right;
 }
 .container .bannerBox .sideBar {
+  width: 468px;
   float: right;
 }
 .container .bannerBox .sideBar .side_up {
+  background: #ffffff;
   height: 291px;
   border: 1px solid #DEDFE0;
+}
+.container .bannerBox .sideBar .side_up .side_up_con {
+  padding: 14px 32px;
+}
+.container .bannerBox .sideBar .side_up .side_up_con h3 {
+  font: 16px/16px "Microsoft YaHei", "Arial";
+  border-bottom: 1px solid #ebebeb;
+  height: 36px;
+  color: #666666;
 }
 .container .bannerBox .sideBar .side_down {
   border: 1px solid #DEDFE0;
