@@ -137,6 +137,7 @@
   float: right;
 }
 .myHeader .headerBox .navRight .regBtn {
+  float: left;
   display: inline-block;
   width: 52px;
   height: 28px;
@@ -148,6 +149,7 @@
   border-radius: 3px;
 }
 .myHeader .headerBox .navRight .signBtn {
+  float: left;
   font: 13px/25px "Microsoft YaHei", "Arial";
   display: inline-block;
   height: 25px;
@@ -157,9 +159,88 @@
   border-left: 1px solid #ebebeb;
   color: #444444;
 }
-.myHeader .headerBox .navRight span {
+.myHeader .headerBox .navRight .relLogin {
+  display: inline-block;
+  position: relative;
+}
+.myHeader .headerBox .navRight .relLogin:hover i {
+  -webkit-transform: rotateZ(-180deg);
+  -moz-transform: rotateZ(-180deg);
+  -o-transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);
+}
+.myHeader .headerBox .navRight .relLogin .relNum span {
   margin: 20px 25px;
   display: inline-block;
   font: 13px/25px "Microsoft YaHei", "Arial";
   color: #444444;
+  float: left;
+  height: 100%;
+}
+.myHeader .headerBox .navRight .relLogin .relNum .relNum_sina {
+  margin: 12px 0 0 0px;
+  display: inline-block;
+  width: 40px ;
+  height: 41px;
+  background: url(../images/share_1.png) center no-repeat;
+  background-size: 100%;
+}
+.myHeader .headerBox .navRight .relLogin .relNum .relNum_sina:hover {
+  background: url(../images/share_1_1.png) center no-repeat;
+}
+.myHeader .headerBox .navRight .relLogin .relNum .relNum_qq {
+  margin: 12px 10px;
+  display: inline-block;
+  width: 40px ;
+  height: 41px;
+  background: url(../images/share_2.png) center no-repeat;
+  background-size: 100%;
+}
+.myHeader .headerBox .navRight .relLogin .relNum .relNum_qq:hover {
+  background: url(../images/share_2_1.png) center no-repeat;
+}
+.myHeader .headerBox .navRight .relLogin .relNum i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../images/icon.png) no-repeat;
+  margin: 27px  0 0 5px;
+  -moz-transition: -moz-transform 0.2s ease-out;
+  -webkit-transition: -webkittransform 0.2s ease-out;
+  -o-transition: -o-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+}
+.myHeader .headerBox .navRight .relLogin .relNum_more {
+  border: 1px solid #e0e0e0;
+  position: absolute;
+  right: 0;
+  background: #ffffff;
+  cursor: pointer;
+}
+.myHeader .headerBox .navRight .relLogin .relNum_more li {
+  float: left;
+  width: 40px ;
+  height: 41px;
+  margin: 10px;
+}
+.myHeader .headerBox .navRight .relLogin .relNum_more .relNum_taobao {
+  background: url(../images/share_3.png) center no-repeat;
+  background-size: 100%;
+}
+.myHeader .headerBox .navRight .relLogin .relNum_more .relNum_taobao:hover {
+  background: url(../images/share_3_1.png) center no-repeat;
+}
+.myHeader .headerBox .navRight .relLogin .relNum_more .relNum_weibo {
+  background: url(../images/share_4.png) center no-repeat;
+  background-size: 100%;
+}
+.myHeader .headerBox .navRight .relLogin .relNum_more .relNum_weibo:hover {
+  background: url(../images/share_4_1.png) center no-repeat;
+}
+.myHeader .headerBox .navRight .relLogin .relNum_more .relNum_douban {
+  background: url(../images/share_5.png) center no-repeat;
+  background-size: 100%;
+}
+.myHeader .headerBox .navRight .relLogin .relNum_more .relNum_douban:hover {
+  background: url(../images/share_5_1.png) center no-repeat;
 }

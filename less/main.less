@@ -152,6 +152,7 @@
 	 	.navRight{
 	 		.fr;
 	 		.regBtn{
+	 			.fl;
 	 			display: inline-block;
 	 			width: 52px;
 	 			height: 28px;
@@ -163,6 +164,7 @@
 	 			border-radius: 3px;
 	 		}
 	 		.signBtn{
+	 			.fl;
 	 			font: 13px/25px  "Microsoft YaHei","Arial";
 	 			display: inline-block;
 	 			height: 25px;
@@ -172,12 +174,97 @@
 	 			border-left: @border-b;
 	 			color: @color-a;
 	 		}
-	 		span{
-	 			margin: 20px 25px;
+	 		.relLogin{
 	 			display: inline-block;
-	 			font: 13px/25px  "Microsoft YaHei","Arial";
-	 			color: @color-a;
+	 			position: relative;
+	 			&:hover i{
+	 				-webkit-transform: rotateZ(-180deg);
+	 	  			-moz-transform: rotateZ(-180deg);
+	 	  			-o-transform: rotateZ(-180deg);
+	 	  			transform: rotateZ(-180deg);
+	 			}
+	 			.relNum{
+	 				span{
+		 			margin: 20px 25px;
+		 			display: inline-block;
+		 			font: 13px/25px  "Microsoft YaHei","Arial";
+		 			color: @color-a;
+		 			.fl;
+		 			height: 100%;
+		 			}
+		 			.relNum_sina{
+		 				margin: 12px 0 0 0px;
+		 				display: inline-block;
+		 				width: 40px ;
+		 				height: 41px;
+		 				background: url(../images/share_1.png) center no-repeat;
+		 				background-size: 100%;
+		 				&:hover {
+		 					background: url(../images/share_1_1.png) center no-repeat;
+		 				}
+		 			}
+		 			.relNum_qq{
+		 				margin: 12px 10px;
+		 				display: inline-block;
+		 				width: 40px ;
+		 				height: 41px;
+		 				background: url(../images/share_2.png) center no-repeat;
+		 				background-size: 100%;
+		 				&:hover {
+		 					background: url(../images/share_2_1.png) center no-repeat;
+		 				}
+		 			}
+		 			i{
+		 				display: inline-block;
+			 	  		width: 10px;
+			 	  		height: 10px;
+			 	  		background: url(../images/icon.png) no-repeat;
+			 	  		margin:27px  0 0 5px;
+			 	  		-moz-transition:-moz-transform .2s ease-out;
+			 	  		-webkit-transition:-webkittransform .2s ease-out;
+			 	  		-o-transition:-o-transform .2s ease-out;
+			 	  		transition:transform .2s ease-out;
+		 			}
+	 			
+	 			}
+	 			.relNum_more{
+	 				border:@border-a;
+	 				position: absolute;
+	 				right: 0;
+	 				background: @bg-color;
+	 				cursor: pointer;
+	 				li{
+	 					.fl;
+	 					width: 40px ;
+		 				height: 41px;
+		 				margin: 10px;
+	 				}
+	 				.relNum_taobao{	 					
+		 				background: url(../images/share_3.png) center no-repeat;
+		 				background-size: 100%;
+		 				&:hover {
+		 					background: url(../images/share_3_1.png) center no-repeat;
+		 				}
+	 				}
+	 				.relNum_weibo{	 					
+		 				background: url(../images/share_4.png) center no-repeat;
+		 				background-size: 100%;
+		 				&:hover {
+		 					background: url(../images/share_4_1.png) center no-repeat;
+		 				}
+	 				}
+	 				.relNum_douban{	 					
+		 				background: url(../images/share_5.png) center no-repeat;
+		 				background-size: 100%;
+		 				&:hover {
+		 					background: url(../images/share_5_1.png) center no-repeat;
+		 				}
+	 				}
+	 			}
+
+	 			
 	 		}
+	 		
 	 	}	 	
 	 	
 	 }
