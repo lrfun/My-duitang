@@ -49,10 +49,6 @@
   -o-transform: rotateZ(-180deg);
   transform: rotateZ(-180deg);
 }
-.myHeader .headerBox .navLeft .myNav .nav .navBox_cur {
-  height: 60px;
-  border-bottom: 0;
-}
 .myHeader .headerBox .navLeft .myNav .nav .navBox {
   background: #ffffff;
   width: 70px;
@@ -77,7 +73,6 @@
   transition: transform 0.2s ease-out;
 }
 .myHeader .headerBox .navLeft .myNav .nav .subNav {
-  z-index: -500;
   display: none;
   position: absolute;
   border: 1px solid #e0e0e0;
@@ -96,6 +91,17 @@
   padding: 0 0 0 30px;
   line-height: 13px;
   margin-bottom: 20px;
+}
+.myHeader .headerBox .navLeft .myNav .nav .subNav .bg_fff {
+  width: 70px;
+  border: 1px solid #e0e0e0;
+  height: 16px;
+  position: absolute;
+  top: -16px;
+  background: #ffffff;
+  margin-left: -1px;
+  border-bottom: 0;
+  border-top: 0;
 }
 .myHeader .headerBox .navLeft .myNav .nav .subNav_b {
   float: left;
