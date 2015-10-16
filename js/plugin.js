@@ -1,6 +1,6 @@
 
 
-// 首页头部鼠标经过显示导航菜单
+// 头部鼠标经过显示导航菜单
 $(document).ready(function() {
 	$('#nav').mouseover(function () {
 		$(this).find('#subNav').show();		
@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$(this).hide();		
 	})
 
-	//首页头部鼠标经过显示关联账号
+	//头部鼠标经过显示关联账号
 	$('#relLogin').mouseover(function(){
 		$(this).find('#relNum_more').show();
 	}).mouseout(function(){
