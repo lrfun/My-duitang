@@ -45,13 +45,20 @@
 			 	  	position: relative;
 			 	  	margin: 0px 0 0 20px;
 			 	  	display: inline-block;
+			 	  	cursor: pointer;
 			 	  	&:hover i{
 		 	  			-webkit-transform: rotateZ(-180deg);
 		 	  			-moz-transform: rotateZ(-180deg);
 		 	  			-o-transform: rotateZ(-180deg);
 		 	  			transform: rotateZ(-180deg);
-				 	  		}
+		 	 		}
+
+		 	 		.navBox_cur{
+		 	 			height: 60px;
+		 	 			border-bottom: 0;
+		 	 		}
 			 	  	.navBox{
+			 	  		background:@bg-color; 
 			 	  		width: 70px;
 				 	  	height: 26px;
 				 	  	border:@border-a;
@@ -80,6 +87,8 @@
 				 	  	}
 			 	  	}
 			 	  	.subNav{
+			 	  		z-index: -500;
+			 	  		display: none;
 			 	  		position: absolute;
 			 	  		border:@border-a;
 			 	  		padding: 35px 0;
@@ -183,6 +192,7 @@
 	 	  			-o-transform: rotateZ(-180deg);
 	 	  			transform: rotateZ(-180deg);
 	 			}
+
 	 			.relNum{
 	 				span{
 		 			margin: 20px 25px;
@@ -228,6 +238,7 @@
 	 			
 	 			}
 	 			.relNum_more{
+	 				display: none;
 	 				border:@border-a;
 	 				position: absolute;
 	 				right: 0;

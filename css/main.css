@@ -41,6 +41,7 @@
   position: relative;
   margin: 0px 0 0 20px;
   display: inline-block;
+  cursor: pointer;
 }
 .myHeader .headerBox .navLeft .myNav .nav:hover i {
   -webkit-transform: rotateZ(-180deg);
@@ -48,7 +49,12 @@
   -o-transform: rotateZ(-180deg);
   transform: rotateZ(-180deg);
 }
+.myHeader .headerBox .navLeft .myNav .nav .navBox_cur {
+  height: 60px;
+  border-bottom: 0;
+}
 .myHeader .headerBox .navLeft .myNav .nav .navBox {
+  background: #ffffff;
   width: 70px;
   height: 26px;
   border: 1px solid #e0e0e0;
@@ -71,6 +77,8 @@
   transition: transform 0.2s ease-out;
 }
 .myHeader .headerBox .navLeft .myNav .nav .subNav {
+  z-index: -500;
+  display: none;
   position: absolute;
   border: 1px solid #e0e0e0;
   padding: 35px 0;
@@ -211,6 +219,7 @@
   transition: transform 0.2s ease-out;
 }
 .myHeader .headerBox .navRight .relLogin .relNum_more {
+  display: none;
   border: 1px solid #e0e0e0;
   position: absolute;
   right: 0;
