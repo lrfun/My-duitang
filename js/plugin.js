@@ -48,3 +48,40 @@ $(document).ready(function() {
 // }
 
 
+// 轮播
+
+function lunbo(){
+	num = 3;
+    var i = 0;
+    var theInt
+    theInt = null;
+    $(".banner .Pic").eq(0).fadeIn(500);
+    $(".PicNum .Text").eq(0).addClass("cur");
+    $(".PicNum .Text").each(function (i) {
+        $(this).click(function () {
+            HuanDeng(i);
+            Change(i);
+        });
+    });
+    
+    
+    HuanDeng = function (p) {
+        clearInterval(theInt);
+        theInt = setInterval(function () {
+            p++;
+            if (p < num) {
+                Change(p);
+            } else {
+                p = 0;
+                Change(p);
+            }
+        }, 5000);
+    };
+    HuanDeng(-1);
+    function Change(num) {
+        $(".banner .Pic").fadeOut(500);
+        $(".banner .Pic").eq(num).fadeIn(500);
+        $(".PicNum .Text").removeClass("cur");
+        $(".PicNum .Text").eq(num).addClass("cur");
+    }          
+}
