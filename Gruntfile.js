@@ -25,7 +25,7 @@ module.exports = function(grunt) {
                  {
               expand: true,
               cwd: 'images/',
-              src: ['**/*.{png,jpg,jpeg}'], // 优化 img 目录下所有 png/jpg/jpeg 图片
+              src: ['**/*.{png,jpg,jpeg}'], // 优化 images 目录下所有 png/jpg/jpeg 图片
               dest: 'images/' // 优化后的图片保存位置，覆盖旧图片，并且不作提示
               }
               ]
