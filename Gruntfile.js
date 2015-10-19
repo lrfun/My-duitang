@@ -94,10 +94,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.registerTask('outputcss',['less']);
-   grunt.registerTask('img', ['imagemin']);
+  grunt.registerTask('img', ['imagemin']);
   grunt.registerTask('concatjs',['concat']);
   grunt.registerTask('compressjs',['concat','jshint','uglify']);
-  grunt.registerTask('watchit',['less','concat','jshint','uglify','connect','watch']);
+  grunt.registerTask('watchit',['less','imagemin','concat','jshint','uglify','connect','watch']);
   grunt.registerTask('default');
 
 };
