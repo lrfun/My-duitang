@@ -23,7 +23,7 @@
 	 position: fixed;
 	 top:0;
 	 .headerBox{
-	 	width:1200px;
+	 	// width: 1200px;	 	
 	 	margin:0 auto;
 	 	height: 100%;
 	 	z-index: 100;
@@ -142,15 +142,15 @@
 			 	  	}
 		 	    }
 		 	    .search{
+		 	    	// width: 364px;
+		 	    	// height: 30px;
 		 	    	.fl;
-		 	    	border: 1px solid #c5c5c5;
-		 	    	width: 364px;
-		 	    	height: 30px;
+		 	    	border: 1px solid #c5c5c5;		 	    	
 		 	    	position: relative;
 		 	    	display: inline-block;
 		 	    	margin: 16px 0 0 50px;
-		 	    	.searchBox{
-		 	    		width: 322px;
+		 	    	.searchBox{	
+		 	    	    // width:322px; 	 	    		
 		 	    		padding: 0 0 0 3px;
 		 	    		height: 30px;
 		 	    		border: none;
@@ -297,14 +297,14 @@
 //body
 
 .container{
-	width: 1200px;
+	// width: 1200px;
 	margin: 100px auto 40px;
 	.bannerBox{
 		width: 100%;
 		.banner{
 			position: relative;
-			width: 712px;
-			height: 445px;
+			// width: 712px;
+			// height: 445px;
 			overflow: hidden;
 			.fl;
 			&:hover .up_down{
@@ -314,8 +314,8 @@
 				width: 300%;
 				position: absolute;
 				.banner_img{
-					width:712px;
-					height: 445px;
+					// width:712px;
+					// height: 445px;
 					.fl;
 					position: relative;					
 					span{
@@ -323,8 +323,8 @@
 						position: absolute;
 						font:27px/64px  "Microsoft YaHei","Arial";
 		 			    color: @bg-color;
-		 			    bottom:22px;
-		 			    left: 60px;
+		 			    // bottom:22px;
+		 			    // left: 60px;
 		 			    strong{
 		 			    	font:14px/64px  "Microsoft YaHei","Arial";
 		 			    	vertical-align: top;
@@ -334,22 +334,22 @@
 			}
 			.banner_num{
 				position: absolute;
-				bottom: 20px;
-				left: 40px;
-				width: 632px;
-				height: 64px;
+				// bottom: 20px;
+				// left: 40px;
+				// width: 632px;
+				// height: 64px;
 				.banner_bg{
 					background: #000;
-					width: 632px;
-					height: 64px;
+					// width: 632px;
+					// height: 64px;
 					opacity: .45;
  					 filter: alpha(opacity=45);
- 					 border-radius: 10px;
+ 					 // border-radius: 10px;
 				}
 				.banner_text{
 					position: absolute;
-					bottom: 27px;
-					left: 500px;
+					// bottom: 27px;
+					// left: 500px;
 
 					li{
 						width: 15px;
@@ -394,7 +394,7 @@
 				background: @bg-color;
 				height: 291px;
 				border: 1px solid #DEDFE0;
-				margin-bottom: 18px;
+				// margin-bottom: 18px;
 				.side_up_con{
 					padding: 14px 32px;
 					h3{
@@ -455,20 +455,7 @@
 					}
 				}
 			}
-			.side_down{
-				border: 1px solid #DEDFE0;
-				height: 130px;
-				background: @bg-color;
-				background: url(../images/dt_img_1.png) no-repeat;
-				a{
-					display: inline-block;
-					padding: 8px 10px;
-					background: #E84C3D;
-					color:@bg-color; 
-					font:14px/14px  "Microsoft YaHei","Arial";
-					margin: 90px 0 0 208px;
-				}
-			}				
+					
 		}
 	}
 	.content{
@@ -501,7 +488,7 @@
 				width: 100%;				
 				.con_list{
 					width: 224px;
-					margin-right: 20px;
+					// margin-right: 20px;
 					.fl;
 					.imgBar{
 						width: 222px;
@@ -643,4 +630,191 @@
 
 .myFooter{
 	width: 100%;
+}
+
+
+// 媒体查询适用于1280px以上屏幕
+@media screen and (min-width:1280px){
+ 	.myHeader{
+ 		.headerBox{
+ 			width: 1200px;
+ 			.search{
+ 				width: 364px;
+		 	    height: 30px;
+		 	    .searchBox{
+		 	    	width: 322px;
+		 	    }
+ 			}
+ 		}
+ 	}
+ 	.container{
+ 		width: 1200px;
+ 		.banner{
+ 			width: 712px;
+ 			height: 445px;
+ 			.bannerBar{
+ 				.banner_img{
+					width:712px;
+					height: 445px;
+					span{
+						
+		 			    bottom:22px;
+		 			    left: 60px;	 			    
+					}
+				}
+ 			}
+ 			.banner_num{
+				position: absolute;
+				bottom: 20px;
+				left: 40px;
+				width: 632px;
+				height: 64px;
+				.banner_bg{
+					background: #000;
+					width: 632px;
+					height: 64px;
+					opacity: .45;
+ 					 filter: alpha(opacity=45);
+ 					 border-radius: 10px;
+				}
+				.banner_text{
+					position: absolute;
+					bottom: 27px;
+					left: 500px;
+
+					li{
+						width: 15px;
+						height: 15px;
+						background: url(../images/num.png) no-repeat;
+						background-size: 100%;
+						.fl;
+						margin-left: 5px;						
+					}
+					
+
+				}
+			}
+ 			
+ 		}
+ 		.sideBar{
+ 			.side_up{
+ 				margin-bottom: 18px;
+ 			}
+ 			
+ 			.side_down{
+				border: 1px solid #DEDFE0;
+				height: 130px;
+				background: @bg-color;
+				background: url(../images/dt_img_1.png) no-repeat;
+				a{
+					display: inline-block;
+					padding: 8px 10px;
+					background: #E84C3D;
+					color:@bg-color; 
+					font:14px/14px  "Microsoft YaHei","Arial";
+					margin: 90px 0 0 208px;
+				}
+			}	
+ 		
+ 		}
+ 		.content{
+			.con_list{
+				margin-right: 20px;
+			}
+		}	
+ 	}
+}
+
+// 媒体查询适用于1280px以下屏幕
+@media screen and (max-width:1280px){
+ 	.myHeader{
+ 		.headerBox{
+ 			width: 960px;
+ 			.search{
+ 				width: 270px;
+		 	    height: 30px;
+		 	    .searchBox{
+		 	    	width: 230px;
+		 	    }
+ 			}
+ 		}
+ 	}
+ 	.container{
+ 		width: 960px;
+ 		.banner{
+ 			width: 468px;
+ 			height: 293px;
+ 			.bannerBar{
+ 				.banner_img{
+					width:468px;
+					height: 293px;
+					span{
+						display: inline-block;;
+						width: 468px;
+						text-align: center;
+		 			    bottom:22px;	 			     			    
+					}
+				}
+ 			} 
+ 			.banner_num{				
+				bottom: 0px;
+				left: 0px;
+				width: 468px;
+				height: 80px;
+				.banner_bg{					
+					width: 468px;
+					height: 80px;				
+					
+				}
+				.banner_text{					
+					bottom: 15px;
+					left: 50%;
+					margin-left: -30px;
+
+					li{
+						width: 15px;
+						height: 15px;
+						background: url(../images/num.png) no-repeat;
+						background-size: 100%;											
+					}				
+					
+
+				}
+			}			
+ 		} 
+ 		.side_down{
+ 			margin-bottom: 0px;
+ 		}
+ 				
+		.side_down{
+		
+			a{			
+				
+				color:#F1F2F3; 				
+			}
+		}
+		.content{
+			.content_con{
+				.main_con{
+					width: 980px;
+					overflow: hidden;
+					height: 328px;
+					.con_list{
+						margin-right: 21px;					
+					}
+				}
+				.main_con_a{
+					height: 296px;
+				}
+				.main_con_b{
+					height:253px;
+				}
+				
+				
+			}
+			
+		}	
+ 		
+ 				
+ 	}
 }
