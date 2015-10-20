@@ -1,7 +1,8 @@
 
 
-// 头部鼠标经过显示导航菜单
 $(document).ready(function() {
+
+// 头部鼠标经过显示导航菜单
 	$('#nav').mouseover(function () {
 		$(this).find('#subNav').show();		
 	}).mouseout(function(){
@@ -26,6 +27,27 @@ $(document).ready(function() {
 	}).mouseout(function(){
 		$(this).hide();		
 	});
+
+    //首页轮播
+     function DY_scroll(wraper, prev, next){
+         wraper = $(wraper);
+         prev = $(prev);
+         next = $(next);
+         img = wraper.find('ul');
+         w = img.find('li').outerWidth(true);      
+        next.click(function(){
+            img.animate({'margin-left': -w}, function(){
+                img.find('li').eq(0).appendTo(img);
+                img.css({'margin-left': 0});
+            });
+        });
+        prev.click(function(){
+            img.find('li:last').prependTo(img);
+            img.css({'margin-left': -w});
+            img.animate({'margin-left': 0});
+        });      
+    }
+    DY_scroll('.container', '.prev', '.next');
 });
 
 // $(document).ready(function() {
