@@ -53,7 +53,7 @@ $(document).ready(function() {
 function lunbo(){
 	num = 3;
     var i = 0;
-    var theInt
+    var theInt;
     theInt = null;
     $(".banner .Pic").eq(0).fadeIn(500);
     $(".PicNum .Text").eq(0).addClass("cur");
