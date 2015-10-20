@@ -688,13 +688,17 @@
     color: #F1F2F3;
   }
   .container .content .content_con .main_con {
+    width: 980px;
     overflow: hidden;
     height: 328px;
   }
   .container .content .content_con .main_con .con_list {
-    margin-right: 16px;
+    margin-right: 21px;
   }
-  .container .content .content_con .main_con .con_list .con_list_last_a {
-    margin-right: 0;
+  .container .content .content_con .main_con_a {
+    height: 296px;
+  }
+  .container .content .content_con .main_con_b {
+    height: 253px;
   }
 }
