@@ -29,12 +29,12 @@ $(document).ready(function() {
 	});
 
     //首页轮播
-     function DY_scroll(wraper, prev, next){
-        wraper = $(wraper);
-        prev = $(prev);
-        next = $(next);
-        img = wraper.find('.bannerBar');
-        w = img.find('.banner_img').outerWidth(true);      
+     function DY_scroll(wraper, prev_page, next_page){
+        var wrap = $(wraper);
+        var prev = $(prev_page);
+        var next = $(next_page);
+        var img = wraper.find('.bannerBar');
+        var w = img.find('.banner_img').outerWidth(true);      
         next.click(function(){
             img.animate({'margin-left': -w}, function(){
                 img.find('.banner_img').eq(0).appendTo(img);
