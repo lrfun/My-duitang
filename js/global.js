@@ -53,9 +53,7 @@ $(document).ready(function() {
         next.click(function(){
             img.animate({'margin-left': -w}, function(){
                 img.find('.banner_img').eq(0).appendTo(img);                               
-                img.css({'margin-left': 0});
-                var index=$(this).index();
-                alert(index); 
+                img.css({'margin-left': 0});                
             });
         });
         prev.click(function(){
