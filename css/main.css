@@ -428,9 +428,6 @@
   font-weight: 700;
   background: #22b4f6;
 }
-.container .content .content_con .main_con {
-  width: 100%;
-}
 .container .content .content_con .main_con .con_list {
   width: 224px;
   float: left;
@@ -665,6 +662,9 @@
 .container .content .content_con .main_con .con_list_last {
   margin-right: 0;
 }
+.container .content .content_con .mainItem .con_list {
+  margin-bottom: 20px;
+}
 .myFooter {
   width: 100%;
 }
@@ -739,7 +739,10 @@
     font: 14px/14px "Microsoft YaHei", "Arial";
     margin: 90px 0 0 208px;
   }
-  .container .content .con_list {
+  .container .content .main_con {
+    width: 1220px;
+  }
+  .container .content .main_con .con_list {
     margin-right: 20px;
   }
 }
@@ -799,7 +802,7 @@
     color: #F1F2F3;
   }
   .container .content .content_con .main_con {
-    width: 980px;
+    width: 976px;
     overflow: hidden;
   }
   .container .content .content_con .main_con .con_list {
