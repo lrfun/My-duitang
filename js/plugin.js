@@ -80,8 +80,7 @@ $(document).ready(function() {
     scrolling(-1);
 
     function change(){
-      var idleft=index*vwidth;
-      // alert(vwidth);
+      var idleft=index*vwidth;     
       $(".bannerBar").animate({marginLeft:-idleft},500);
       $(".banner_text li").removeClass("cur").eq(index).addClass("cur"); 
     }

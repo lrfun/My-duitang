@@ -321,14 +321,14 @@
 }
 .container .bannerBox .banner .up_down .ban_up {
   margin-left: 20px;
-  width: 21px;
-  height: 38px;
+  height: 35px;
+  width: 35px;
   float: left;
 }
 .container .bannerBox .banner .up_down .ban_down {
   margin-right: 20px;
-  width: 21px;
-  height: 38px;
+  height: 35px;
+  width: 35px;
   float: right;
 }
 .container .bannerBox .sideBar {
