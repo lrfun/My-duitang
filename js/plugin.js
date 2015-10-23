@@ -29,27 +29,27 @@ $(document).ready(function() {
 	});
 
     //首页轮播
-    var vwidth=$(".bannerBar banner_img").width();
-    var Index=0;
+    var vwidth=$(".bannerBar .banner_img").width();   
+    var index=0;
     var theInt=null;
-    var num=5;
-    $(".prev_dian").eq(Index).addClass("cur");
+    var num=3;
+    $(".banner_text li").eq(index).addClass("cur");
     $(".btn").each(function(){
       $(this).click(function(){
         var pi=$(this).attr("data-id");
         if(pi=="pre"){
-          Index--;
-          if(Index<0){
-            Index=4;
+          index--;
+          if(index<0){
+            index=num-1;
           }     
           scrolling();
           change();          
           return false;
         }
         if(pi=="next"){
-          Index++;
-          if(Index>4){
-            Index=0;
+          index++;
+          if(index>num-1){
+            index=0;
           }      
           scrolling();
           change();     
@@ -57,10 +57,10 @@ $(document).ready(function() {
         }
       });
     });
-    $(".prev_dian").each(function(){
+    $(".banner_text li").each(function(){
       $(this).click(function(){
         var kolid=$(this).attr("data-id");
-        Index=kolid;
+        index=kolid;
         scrolling();
         change();    
       });
@@ -68,11 +68,11 @@ $(document).ready(function() {
     function scrolling() {
         clearInterval(theInt);
         theInt = setInterval(function () {
-            Index++;
-            if (Index < num) {
+            index++;
+            if (index < num) {
                 change();
             } else {
-                Index = 0;
+                index = 0;
                 change();
             }
         }, 5000);
@@ -80,9 +80,10 @@ $(document).ready(function() {
     scrolling(-1);
 
     function change(){
-      var idleft=Index*vwidth;
-      $(".container .imgBox").animate({marginLeft:-idleft},500);
-      $(".prev_dian").removeClass("cur").eq(Index).addClass("cur"); 
+      var idleft=index*vwidth;
+      // alert(vwidth);
+      $(".bannerBar").animate({marginLeft:-idleft},500);
+      $(".banner_text li").removeClass("cur").eq(index).addClass("cur"); 
     }
 
 
