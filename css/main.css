@@ -492,6 +492,7 @@
 }
 .container .content .content_con .main_con .con_list .imgBar_ht .img_hover_a .operate .collect {
   float: left;
+  cursor: pointer;
   padding: 0 5px;
   display: inline-block;
   height: 30px;
@@ -509,6 +510,7 @@
   margin-left: 5px;
 }
 .container .content .content_con .main_con .con_list .imgBar_ht .img_hover_a .operate .zan {
+  cursor: pointer;
   margin: 0 8px 0 35px;
   display: inline-block;
   width: 38px;
@@ -520,6 +522,7 @@
   background-color: #F0F0F0;
 }
 .container .content .content_con .main_con .con_list .imgBar_ht .img_hover_a .operate .comment {
+  cursor: pointer;
   display: inline-block;
   width: 38px;
   height: 30px;
