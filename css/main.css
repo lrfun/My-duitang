@@ -609,6 +609,17 @@
   font: 13px/21px "Microsoft YaHei", "Arial";
   color: #a0a0a0;
 }
+.container .content .content_con .main_con .con_list .textBar .text_my .text_mybar .text_my_b {
+  margin-left: 5px;
+  background: url(../images/dt_img_15a.png) left center no-repeat;
+  background-size: 15px 15px;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .text_mybar .text_my_b span {
+  display: inline-block;
+  margin-left: 15px;
+  font: 13px/21px "Microsoft YaHei", "Arial";
+  color: #a0a0a0;
+}
 .container .content .content_con .main_con .con_list .textBar .text_my .text_mybar .money {
   float: right;
   color: #F14382;
