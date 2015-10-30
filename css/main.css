@@ -710,6 +710,9 @@
 .container .content .content_con .main_con .con_list .textBar .text_my .comment_text .sure .calbtn {
   background: #ddd;
 }
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox {
+  height: 200px;
+}
 .container .content .content_con .main_con .con_list .text_txt {
   height: 71px;
 }
