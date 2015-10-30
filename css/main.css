@@ -630,18 +630,64 @@
   padding-top: 10px;
   display: block;
   height: 25px;
-  background: url(../images/dt_img_17.png) left bottom no-repeat;
   font: 13px/25px "Microsoft YaHei", "Arial";
   color: #666;
+  vertical-align: middle;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .my_photo img {
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  display: inline-block;
+  float: left;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .my_photo strong {
+  font: 13px/25px "Microsoft YaHei", "Arial";
+  height: 25px;
+  float: left;
+  margin-left: 5px;
 }
 .container .content .content_con .main_con .con_list .textBar .text_my .text_coll {
-  padding: 0 0 10px 30px;
+  padding: 0 0 10px 6px;
   display: inline-block;
   color: #888;
   font: 13px/14px "Microsoft YaHei", "Arial";
 }
 .container .content .content_con .main_con .con_list .textBar .text_my .text_coll a {
   color: #666;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .comment_text {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .comment_text .imgBox_a {
+  float: left;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  display: inline-block;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .comment_text .imgBox_a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .comment_text p {
+  float: right;
+  width: 170px;
+  padding: 0;
+  color: #888;
+  font: 14px/20px "Microsoft YaHei", "Arial";
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .comment_text textarea {
+  float: right;
+  width: 163px;
+  padding: 0 0 0 5px;
+  color: #888;
+  font: 14px/20px "Microsoft YaHei", "Arial";
+  margin-top: 2px;
+  resize: none;
 }
 .container .content .content_con .main_con .con_list .text_txt {
   height: 71px;
