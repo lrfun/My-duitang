@@ -86,7 +86,16 @@ $(document).ready(function() {
     }
 
 
-
+   // 点击评论
+   $('.commentBox').hide();
+   $('.comment').click(function(){
+      var obj=$(this).parents('.con_list').find('commentBox'); 
+      alert(obj.html()) ;   
+       obj.show();
+       $(this).find('.calbtn').click(function(){
+           obj.hide();
+       });
+   });
      
     //  function DY_scroll(wraper, prev_page, next_page){
     //     var wrap = $(wraper);
