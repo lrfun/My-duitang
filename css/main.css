@@ -680,7 +680,24 @@
   color: #888;
   font: 14px/20px "Microsoft YaHei", "Arial";
 }
-.container .content .content_con .main_con .con_list .textBar .text_my .comment_text textarea {
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox .imgBox_a {
+  float: left;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  display: inline-block;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox .imgBox_a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: inline-block;
+}
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox textarea {
   float: right;
   width: 163px;
   padding: 0 0 0 5px;
@@ -689,11 +706,11 @@
   margin-top: 2px;
   resize: none;
 }
-.container .content .content_con .main_con .con_list .textBar .text_my .comment_text .sure {
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox .sure {
   width: 100%;
   float: left;
 }
-.container .content .content_con .main_con .con_list .textBar .text_my .comment_text .sure a {
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox .sure a {
   display: inline-block;
   float: right;
   width: 50px;
@@ -704,14 +721,11 @@
   border-radius: 3px;
   margin: 10px;
 }
-.container .content .content_con .main_con .con_list .textBar .text_my .comment_text .sure .surebtn {
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox .sure .surebtn {
   background: #eb5f00;
 }
-.container .content .content_con .main_con .con_list .textBar .text_my .comment_text .sure .calbtn {
+.container .content .content_con .main_con .con_list .textBar .text_my .commentBox .sure .calbtn {
   background: #ddd;
-}
-.container .content .content_con .main_con .con_list .textBar .text_my .commentBox {
-  height: 200px;
 }
 .container .content .content_con .main_con .con_list .text_txt {
   height: 71px;
