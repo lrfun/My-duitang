@@ -434,8 +434,8 @@
 										<div class=" clearfix commentBox" >											
 											<div class="imgBox_a"><img src="./images/dt_img_17.png" alt="" width="100%"></div>
 											<textarea type="textarea" cols="20" rows="5" >评论...</textarea>
-											<div class="sure"><a href="" class="calbtn">取消</a><a href="" class="surebtn">提交</a</div>
-										</div>
+											<div class="sure"><a href="" class="calbtn">取消</a><a href="" class="surebtn">提交</a></div>
+										</div>									
 									</div>
 								</div>								
 							</div>
@@ -700,10 +700,52 @@
 
  		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> 
  		<script type="text/javascript" src="js/global.min.js"></script>	
- 		<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+ 		<script type="text/javascript" src="js/jquery.masonry.min.js"></script>	
 
  		 <script type="text/javascript">
 			 $(document).ready(function(){
+			 	// waterfall();
+			 	// getMinKey();
+					// //瀑布流
+				 //  function waterfall(){
+				 //    var apin = $('#main_con .con_list');
+				 //    var oparent = $('#main_con');
+				 //    var pos=[];
+				 //    apin.each(function(i){				    	
+				 //      //4是第一排的元素个数
+				 //      if(i<5){
+				 //        //将第一排的高度存入到数组中
+				 //        pos[i] = apin.eq(i).innerHeight();
+				 //      }else{
+				 //        //按照瀑布流定位
+				 //        //获取数组中的最小值
+				 //        var minh = Math.min.apply({},pos);
+				 //        //获取高度最小的键名
+				 //        var mink = getMinKey(pos,minh);
+				 //        //获取高度最小的距离左边的距离
+				 //        var minl = apin[mink].offsetLeft;
+				 //        //定位元素位置
+				 //        apin.eq(i).css({
+				 //          position:'absolute',
+				 //          top:minh+20,
+				 //          left:minl
+				 //        });
+				 //        //将加入的元素与其上面元素的高度相加，为下面元素排列做准备
+				 //        pos[mink] +=apin.eq(i).innerHeight();						
+				 //      }					     				
+				 //    });
+				 //    //设置最外容器的高以适应内容的变化
+				 //    var maxh = Math.max.apply({},pos)+10;
+				 //    oparent.css('height',maxh)		
+				 //  }
+				 //  //获取数组中最小元素的键名
+				 //    function getMinKey(arr,min){
+				 //      for(var key in arr){
+				 //        if(arr[key]==min){
+				 //          return key;
+				 //        }
+				 //      }
+				 //    }
 			 	var $container = $('#main_con');
 			 	$container.imagesLoaded(function(){
 			 		$container.masonry({
