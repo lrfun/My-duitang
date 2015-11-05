@@ -2,31 +2,31 @@
 
 $(document).ready(function() {
 
-// 头部鼠标经过显示导航菜单
-	$('#nav').mouseover(function () {
-		$(this).find('#subNav').show();		
-	}).mouseout(function(){
-		$(this).find('#subNav').hide();
-	});
+  // 头部鼠标经过显示导航菜单
+  $('#nav').mouseover(function () {
+    $(this).find('#subNav').show();		
+  }).mouseout(function(){
+    $(this).find('#subNav').hide();
+  });
 
-	$('#subNav').mouseover(function () {
-		$(this).show();		
-	}).mouseout(function(){
-		$(this).hide();		
-	});
+  $('#subNav').mouseover(function () {
+    $(this).show();		
+  }).mouseout(function(){
+    $(this).hide();		
+  });
 
-	//头部鼠标经过显示关联账号
-	$('#relLogin').mouseover(function(){
-		$(this).find('#relNum_more').show();
-	}).mouseout(function(){
-		$(this).find('#relNum_more').hide();
-	});
+  //头部鼠标经过显示关联账号
+  $('#relLogin').mouseover(function(){
+  	$(this).find('#relNum_more').show();
+  }).mouseout(function(){
+  	$(this).find('#relNum_more').hide();
+  });
 
-	$('#relNum_more').mouseover(function () {
-		$(this).show();		
-	}).mouseout(function(){
-		$(this).hide();		
-	});
+  $('#relNum_more').mouseover(function () {
+  	$(this).show();		
+  }).mouseout(function(){
+  	$(this).hide();		
+  });
 
     //首页轮播
     var vwidth=$(".bannerBar .banner_img").width();   
@@ -66,16 +66,16 @@ $(document).ready(function() {
       });
     });
     function scrolling() {
-        clearInterval(theInt);
-        theInt = setInterval(function () {
-            index++;
-            if (index < num) {
-                change();
-            } else {
-                index = 0;
-                change();
-            }
-        }, 5000);
+      clearInterval(theInt);
+      theInt = setInterval(function () {
+        index++;
+        if (index < num) {
+          change();
+        } else {
+          index = 0;
+          change();
+        }
+      }, 5000);
     }
     scrolling(-1);
 
@@ -89,14 +89,14 @@ $(document).ready(function() {
    // 点击评论
    // $('.commentBox').hide();
    $('.comment').click(function(){
-      var obj=$(this).parents('.con_list').find('.commentBox'); 
-      alert(obj.html()) ;   
-       obj.show();
-       $(this).find('.calbtn').click(function(){
-           obj.hide();
-       });
+    var obj=$(this).parents('.con_list').find('.commentBox'); 
+    alert(obj.html()) ;   
+    obj.show();
+    $(this).find('.calbtn').click(function(){
+     obj.hide();
    });
-     
+  });
+   
     //  function DY_scroll(wraper, prev_page, next_page){
     //     var wrap = $(wraper);
     //     var prev = $(prev_page);
@@ -129,26 +129,26 @@ $(document).ready(function() {
     //     });      
     // }
     // DY_scroll('.banner', '.ban_up', '.ban_down');
-});
+  });
 
-// $(document).ready(function() {
-// 	show_Sub(nav,subNav);
-// 	showSub(relLogin,relNum_more);
-// });
+  // $(document).ready(function() {
+  // 	show_Sub(nav,subNav);
+  // 	showSub(relLogin,relNum_more);
+  // });
 
-// function show_Sub(a,b){
-// 	$('#a').mouseover(function(){
-// 		$(this).find('#b').show();
-// 	}).mouseout(function(){
-// 		$(this).find('#b').hide();
-// 	});
-// 	$('#b').mouseover(function(){
-// 		$(this).show();
-// 	}).mouseout(function(){
-// 		$(this).hide();
-// 	})
+  // function show_Sub(a,b){
+  // 	$('#a').mouseover(function(){
+  // 		$(this).find('#b').show();
+  // 	}).mouseout(function(){
+  // 		$(this).find('#b').hide();
+  // 	});
+  // 	$('#b').mouseover(function(){
+  // 		$(this).show();
+  // 	}).mouseout(function(){
+  // 		$(this).hide();
+  // 	})
 
-// }
+  // }
 
 
 
