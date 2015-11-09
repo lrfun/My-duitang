@@ -9,15 +9,15 @@ $(document).ready(function() {
   show_Sub("#relLogin","#relNum_more"); 
 
   function show_Sub(a,b){
-    var hide_tab=b;
-    var tab_tit_a=$(a);
-    var tab_tit_b=$(b);
-    tab_tit_a.mouseover(function(){
-      $(this).find(hide_tab).show();
+    var sub=b;
+    var nav=$(a);
+    var rel=$(b);
+    nav.mouseover(function(){
+      $(this).find(sub).show();
     }).mouseout(function(){
-      $(this).find(hide_tab).hide();
+      $(this).find(sub).hide();
     });
-    tab_tit_b.mouseover(function(){
+    rel.mouseover(function(){
       $(this).show();
     }).mouseout(function(){
       $(this).hide();
