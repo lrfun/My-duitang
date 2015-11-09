@@ -8,16 +8,13 @@ $(document).ready(function() {
   //头部鼠标经过显示关联账号
   show_Sub("#relLogin","#relNum_more"); 
 
-  function show_Sub(a,b){
-    var sub=b;
-    var nav=$(a);
-    var rel=$(b);
-    nav.mouseover(function(){
-      $(this).find(sub).show();
+  function show_Sub(a,b){     
+    $(a).mouseover(function(){
+      $(this).find(b).show();
     }).mouseout(function(){
-      $(this).find(sub).hide();
+      $(this).find(b).hide();
     });
-    rel.mouseover(function(){
+    $(b).mouseover(function(){
       $(this).show();
     }).mouseout(function(){
       $(this).hide();
