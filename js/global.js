@@ -2,31 +2,53 @@
 
 $(document).ready(function() {
 
-  // 头部鼠标经过显示导航菜单
-  $('#nav').mouseover(function () {
-    $(this).find('#subNav').show();		
-  }).mouseout(function(){
-    $(this).find('#subNav').hide();
-  });
-
-  $('#subNav').mouseover(function () {
-    $(this).show();		
-  }).mouseout(function(){
-    $(this).hide();		
-  });
+   // 头部鼠标经过显示导航菜单
+  show_Sub("#nav","#subNav");
 
   //头部鼠标经过显示关联账号
-  $('#relLogin').mouseover(function(){
-  	$(this).find('#relNum_more').show();
-  }).mouseout(function(){
-  	$(this).find('#relNum_more').hide();
-  });
+  show_Sub("#relLogin","#relNum_more"); 
 
-  $('#relNum_more').mouseover(function () {
-  	$(this).show();		
-  }).mouseout(function(){
-  	$(this).hide();		
-  });
+  function show_Sub(a,b){
+    var hide_tab=b;
+    var tab_tit_a=$(a);
+    var tab_tit_b=$(b);
+    tab_tit_a.mouseover(function(){
+      $(this).find(hide_tab).show();
+    }).mouseout(function(){
+      $(this).find(hide_tab).hide();
+    });
+    tab_tit_b.mouseover(function(){
+      $(this).show();
+    }).mouseout(function(){
+      $(this).hide();
+    });
+
+  }
+  // 头部鼠标经过显示导航菜单
+  // $('#nav').mouseover(function () {
+  //   $(this).find('#subNav').show();		
+  // }).mouseout(function(){
+  //   $(this).find('#subNav').hide();
+  // });
+
+  // $('#subNav').mouseover(function () {
+  //   $(this).show();		
+  // }).mouseout(function(){
+  //   $(this).hide();		
+  // });
+
+  //头部鼠标经过显示关联账号
+  // $('#relLogin').mouseover(function(){
+  // 	$(this).find('#relNum_more').show();
+  // }).mouseout(function(){
+  // 	$(this).find('#relNum_more').hide();
+  // });
+
+  // $('#relNum_more').mouseover(function () {
+  // 	$(this).show();		
+  // }).mouseout(function(){
+  // 	$(this).hide();		
+  // });
 
     //首页轮播
     var vwidth=$(".bannerBar .banner_img").width();   
@@ -131,24 +153,7 @@ $(document).ready(function() {
     // DY_scroll('.banner', '.ban_up', '.ban_down');
   });
 
-  // $(document).ready(function() {
-  // 	show_Sub(nav,subNav);
-  // 	showSub(relLogin,relNum_more);
-  // });
-
-  // function show_Sub(a,b){
-  // 	$('#a').mouseover(function(){
-  // 		$(this).find('#b').show();
-  // 	}).mouseout(function(){
-  // 		$(this).find('#b').hide();
-  // 	});
-  // 	$('#b').mouseover(function(){
-  // 		$(this).show();
-  // 	}).mouseout(function(){
-  // 		$(this).hide();
-  // 	})
-
-  // }
+ 
 
 
 
