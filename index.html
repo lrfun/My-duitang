@@ -751,6 +751,22 @@
 			 		});
 				 });
 				});
+
+			$(function(){
+				$.ajax({
+					type:"get",
+					// url:"http://www.duitang.com/hot/masn/?page=1&_type=&pgsource=tp_&_=1452426699810",
+					url:"http://api.duoshuo.com/threads/counts.jsonp?short_name=official&threads=4ff1cbc43ae636b72a00001d&callback=theFunctionName",
+					dataType: 'JSONP',
+					success:function(response){
+						alert(1);
+					},
+					error:function(){ 
+			        	alert('fail'); 
+			    	} 
+
+				})
+			})
 </script>		
 </body>
 </html>
