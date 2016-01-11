@@ -759,7 +759,8 @@
 					url:"http://api.duoshuo.com/threads/counts.jsonp?short_name=official&threads=4ff1cbc43ae636b72a00001d&callback=theFunctionName",
 					dataType: 'JSONP',
 					success:function(data){
-						alert(1);
+						alert(data.options.comments_one);
+						console.log(data);
 					},
 					error:function(){ 
 			        	alert('fail'); 
